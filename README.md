@@ -1,85 +1,79 @@
-# Sistema de Controle de Pessoas - QGControle
 
-Este é um sistema de controle de pessoas que permite cadastrar, registrar entradas e saídas, listar pessoas dentro do quartel, gerar relatórios e mais. O sistema utiliza um banco de dados MySQL para armazenar informações sobre pessoas e seus registros de entrada e saída.
+# 🛡️ Sistema de Controle de Acesso e Relatórios
 
-## Funcionalidades
+Sistema de controle de acessos e geração de relatórios utilizando **Python**, **MySQL** e **FPDF**.  
+Ideal para ambientes organizacionais e militares que demandam segurança, rastreabilidade e automatização de processos de movimentação de pessoas.
 
-- **Cadastrar Pessoa:** Insira o CPF e o nome da pessoa para cadastrá-la no sistema.
-- **Registrar Entrada:** Registre a entrada de uma pessoa no quartel.
-- **Registrar Saída:** Registre a saída de uma pessoa do quartel.
-- **Listar Pessoas Dentro:** Liste todas as pessoas que estão atualmente dentro do quartel.
-- **Listar Pessoas Cadastradas:** Liste todas as pessoas cadastradas no sistema.
-- **Excluir Pessoa:** Exclua uma pessoa cadastrada no sistema e seus registros associados.
-- **Gerar Relatório:** Gere um relatório PDF das movimentações de um dia específico.
-- **Listar Movimentações do Dia:** Liste todas as movimentações de entrada e saída de um dia específico.
+---
 
-## Tecnologias Utilizadas
+## 🚀 Funcionalidades
 
-- Python
-- MySQL (com a biblioteca `mysql-connector-python`)
-- FPDF (para geração de PDFs)
+✅ Cadastro de pessoas com CPF e nome.  
+✅ Registro de entradas e saídas com **timestamp**.  
+✅ Listagem de pessoas presentes no ambiente.  
+✅ Exclusão de pessoas e seus registros associados.  
+✅ Geração de relatórios diários em **PDF**.  
+✅ Consulta de movimentações por data.  
 
-## Pré-requisitos
+---
 
-- Python 3.x
-- MySQL Server
-- Bibliotecas Python:
-  - `mysql-connector-python`
-  - `fpdf`
+## 🛠️ Tecnologias Utilizadas
 
-## Instalação
+- **Python 3.x**  
+- **MySQL**  
+- **FPDF** (para geração de relatórios)  
+- **datetime** (para manipulação de datas)  
 
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/qgcontrole.git
-    cd qgcontrole
-    ```
+---
 
-2. Instale as dependências:
-    ```bash
-    pip install mysql-connector-python fpdf
-    ```
+## ⚙️ Como usar
 
-3. Configure o banco de dados MySQL:
-    - Certifique-se de que o MySQL Server está instalado e em execução.
-    - Altere as credenciais do banco de dados no código, se necessário.
+1. Clone o repositório:  
+```bash
+git clone https://github.com/marcelovalebr/qg-controle-console.git
+cd qg-controle-console
+```
 
-4. Execute o script:
-    ```bash
-    python qgcontrole.py
-    ```
+2. Instale as dependências:  
+```bash
+pip install mysql-connector-python fpdf
+```
 
-## Uso
+3. Configure as credenciais de acesso ao banco no script:  
+- Usuário  
+- Senha  
+- Banco de Dados
 
-1. **Cadastrar Pessoa:**
-    - Escolha a opção 1 no menu.
-    - Insira o CPF e o nome da pessoa.
+4. Execute o script:  
+```bash
+python qg_controle.py
+```
 
-2. **Registrar Entrada:**
-    - Escolha a opção 2 no menu.
-    - Insira o CPF da pessoa.
+5. Use o menu interativo para:  
+- Cadastrar pessoas  
+- Registrar entradas/saídas  
+- Gerar relatórios  
+- Consultar movimentações  
 
-3. **Registrar Saída:**
-    - Escolha a opção 3 no menu.
-    - Insira o CPF da pessoa.
+---
 
-4. **Listar Pessoas Dentro:**
-    - Escolha a opção 4 no menu.
+## 📄 Relatórios
 
-5. **Listar Pessoas Cadastradas:**
-    - Escolha a opção 5 no menu.
+Relatórios são gerados em **formato PDF** contendo:  
+- Lista de todas as movimentações do dia.  
+- Relação de pessoas que permanecem no ambiente.  
 
-6. **Excluir Pessoa:**
-    - Escolha a opção 6 no menu.
-    - Insira o CPF da pessoa a ser excluída.
+---
 
-7. **Gerar Relatório:**
-    - Escolha a opção 7 no menu.
-    - Insira a data do relatório no formato DD/MM/AAAA.
+## 👨‍💻 Autor
 
-8. **Listar Movimentações do Dia:**
-    - Escolha a opção 8 no menu.
-    - Insira a data das movimentações no formato DD/MM/AAAA.
+**Marcelo Vale**  
+Especialista em Automação de Processos, Infraestrutura e Segurança da Informação.  
 
-9. **Sair:**
-    - Escolha a opção 9 no menu para sair do sistema.
+[GitHub](https://github.com/marcelovalebr) | [LinkedIn](https://www.linkedin.com/in/marcelovalebr/)
+
+---
+
+## 📝 Licença
+
+Este projeto está licenciado sob a **MIT License** — veja o arquivo **LICENSE** para mais detalhes.
